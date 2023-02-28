@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Sign in</title>
+<style> 
+ body {
+        background-color: #F3EBF6;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    .main {
+        background-color: #FFFFFF;
+        width: 500px;
+        height: 550px;
+        margin: 6em auto;
+        border-radius: 1.5em;
+        box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+    
+.donate {
+        padding-top: 36px;
+        color: #8C55AA;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+.z {
+	margin-left: 10px;
+}
+ 
+    
+   
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+margin-left :30px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
+
+    .submit {
+      cursor: pointer;
+        border-radius: 5em;
+        color: #fff;
+        background: linear-gradient(to right, #9C27B0, #E040FB);
+        border: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 8px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-left: 35%;
+        font-size: 25px;
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    }
+.city {
+	font-size : 20px;
+	border-radius : 2em;
+margin-bottom: 50px;
+margin-top: 25px;
+margin-left:20px;
+padding-left:10px;
+cursor: pointer;
+}
+    
+
+    
+    a {
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+        color: #E1BEE7;
+        text-decoration: none
+    }
+    
+    @media (max-width: 600px) {
+        .main {
+            border-radius: 0px;
+        }}
+</style>
+</head>
+
+<body>
+  <div class="main">
+    <p class="donate" align="center">YOUR NEEDS</p>
+     <form class="form1" action="lastpage.html">
+    <p class="z" style="font-size: 24px;"><b>Select the following services: </b></p>
+     
+    <label class="container">food
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">clothes
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">medical Apparatus
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Medicines
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Medical Consulations
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+     
+<br>
+<br>
+<label for="name" style="font-size: 24px;" class="z"><b>Select Your City: </b></label>
+       <select id="city" name="city" class="city">
+    <option value="Delhi">Delhi</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Bhuvneshwar">Bhuvneshwar</option>
+  </select><br><br>
+      
+      <center> <input type="submit" class="submit" value="Submit" ></center>
+      
+            
+                
+    </div>
+     
+</body>
+</html>
